@@ -308,12 +308,12 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .section.chapter01.ch-2 .FAQ .title-box{padding-bottom: 4.1667vw;}
 .FAQ .accodion{padding: 0 3.6111vw 13.8889vw 3.6111vw; margin-bottom: 13.8889vw;}
 .FAQ .accodion .card-header{height: 11.1111vw; display: flex; align-items: center;}
-.FAQ .accodion .card-header a{display: block; height: 7.2222vw;padding-left: 10.0000vw; background: url(/src/img/icon-faq.png) no-repeat left center/7.2222vw 7.2222vw;line-height: 7.2222vw;font-size: 4.1667vw; font-weight: 500; cursor: pointer;}
+.FAQ .accodion .card-header a{display: block; height: 7.2222vw;padding-left: 10.0000vw; background: url(../img/icon-faq.png) no-repeat left center/7.2222vw 7.2222vw;line-height: 7.2222vw;font-size: 4.1667vw; font-weight: 500; cursor: pointer;}
 .FAQ .accodion .card-header a.active{font-weight: bold; color: #b37f62;}
 .FAQ .accodion .card-body{display: none; margin: 5.5556vw 0 4.1667vw; }
 .FAQ .accodion ul li:nth-child(1) .card-body{display: block;}
 .FAQ .accodion .card-body p{font-size: 3.7500vw; color: #8a614a; font-weight: normal;line-height: 1.5; padding: 2.7778vw 3.4722vw; background-color: #f5d8c6; border-radius: 2.7778vw;position: relative;}
-.FAQ .accodion .card-body p::before{content: ''; background: url(/src/img/icon-tail.png) no-repeat; background-size: cover; width: 6.1111vw; height:2.7778vw; position: absolute; top: -2.7778vw; left: 30%;}
+.FAQ .accodion .card-body p::before{content: ''; background: url(../img/icon-tail.png) no-repeat; background-size: cover; width: 6.1111vw; height:2.7778vw; position: absolute; top: -2.7778vw; left: 30%;}
 .section.chapter01.ch-2 .title-line .title-box .title-txt{color: #a77458;}
 .section.chapter01.ch-2 .title-line .title-box .title-txt p::before{background-color: #a77458;}
 .section.chapter01.ch-2 .title-line .title-box .title-txt p:nth-child(1)::before{width: 38.8889vw;}
@@ -801,7 +801,7 @@ footer .footer-logo img {width:100%;}
     .section.chapter01.ch-2 .FAQ .title-box{padding-bottom: 30px;}
     .FAQ .accodion{padding: 0 26px 100px 26px; margin-bottom: 100px;}
     .FAQ .accodion .card-header{height: 70px;}
-    .FAQ .accodion .card-header a{height: 52px;padding-left: 72px; background: url(/src/img/icon-faq.png) no-repeat left center/52px 52px;line-height: 52px;font-size: 30px;}
+    .FAQ .accodion .card-header a{height: 52px;padding-left: 72px; background: url(../img/icon-faq.png) no-repeat left center/52px 52px;line-height: 52px;font-size: 30px;}
     .FAQ .accodion .card-body{margin: 40px 0 30px; }
     .FAQ .accodion .card-body p{font-size: 27px;padding: 20px 25px;border-radius: 20px;}
     .FAQ .accodion .card-body p::before{width: 44px; height:20px;top: -20px;;}
