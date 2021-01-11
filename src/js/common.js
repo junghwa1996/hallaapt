@@ -316,27 +316,6 @@ $(".card-header").click(function(){
     }
 });
 
-// $(".momo-gnb li a").click(function() {
-//     var scrollPosition = $($(this).attr("data-target")).offset().top;
-  
-//     $("body").animate({
-//           scrollTop: scrollPosition
-//     }, 500);
-//   });
-
-$(".momo-gnb li a").click(function(event){            
-    e.preventDefault(),
-    $(".gnb-open, .gnb-open-bg").removeClass("on"),
-    $("body").removeClass("scroll-lock"),
-    $("body").removeAttr("style"),
-    $("html, body").scrollTop(popScrollTop);
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-
-});
-
-
-
-
 var wow = new WOW(// default
     {offset: 180}
     );
