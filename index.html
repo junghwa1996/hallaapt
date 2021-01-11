@@ -15,7 +15,6 @@
 	<link rel="preload" crossorigin="crossorigin" href="src/fonts/Lato-Regular.woff" as="font"/>
 	<link rel="preload" crossorigin="crossorigin" href="src/fonts/Gotham-Bold.woff" as="font"/>
 	<link rel="preload" crossorigin="crossorigin" href="src/fonts/Gotham-Rounded-Medium.woff" as="font"/>
-	<link rel="stylesheet" type="text/css" href="src/css/animate.css" />
 	<link rel="stylesheet" type="text/css" href="src/css/common.css" />
 </head>
 <body>
@@ -777,49 +776,5 @@
 	<script src="src/js/slick.min.js"></script>
 	<script src="src/js/player.min.js"></script>
     <script src="src/js/common.js"></script>
-    <!-- <script>
-    var tag = document.createElement('script');
-    tag.src = "https://api.vimeo.com";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
- 
-    var youTubePlayerObject;
- 
-    function onYouTubeIframeAPIReady() {
-            youTubePlayerObject = new YT.Player('youTubePlayerDiv', {
-                    width: '640',
-                    height: '480',
-                    playerVars: {rel: 0},
-            videoId: 'kabyoDokrkw',
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
- 
-    function onPlayerStateChange(event) {
-            if (event.data == YT.PlayerState.PLAYING) { }       
-    }
- 
-    function onPlayerReady(event) {
-            event.target.stopVideo();   
-    }
- 
-  
-    $(document).ready(function () {
- 
-        $(window).on('scroll', function() {
-            var scrollTop = window.innerHeight / 2;
-            var videoTop = $('.iframe-box')[0].getBoundingClientRect().top;
-            if(videoTop < scrollTop) {
-                youTubePlayerObject.playVideo(); //재생
-            }else{
-                youTubePlayerObject.stopVideo(); //재생
-            }
-        });
-    });
-
-    </script> -->
 </body>
 </html>
