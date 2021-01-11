@@ -103,6 +103,8 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .content-box p:last-child {margin-bottom:0;}
 
 .img-box {position:relative; display:block;}
+.img-box.iframe-box > iframe{width: 255vw; height: 192vw; position: absolute; left: -70%; z-index: -1;}
+.img-box.iframe-box .player .vp-controls{display: none;}
 .iframe-box {position:relative; width:100%; height:56.2500vw;}
 .iframe-box > img {position:absolute; top:0; left:0; width:100%; height:100%;}
 .iframe-box > iframe {width:100%; height:100%; outline:0;}
@@ -113,7 +115,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .tag-txt{font-size: 4.1667vw; line-height: 2.5; font-weight: 500;}
 .tag-txt span{font-weight: bold;}
 .two-img{display: flex; justify-content: space-between;}
-.two-img img{width: 45.8333vw;}
+.two-img img{width: 45.8333vw; height: 33.3333vw;}
 .three-img > div{margin-bottom: 5.5556vw;}
 .three-img > div > img{width: 27.7778vw;}
 
@@ -233,7 +235,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 	kv
 -------------------- */
 .section.kv {padding:0;}
-.section.kv .logo {position: absolute; margin-left: 5.5556vw; margin-top: 6.9444vw;}
+.section.kv .logo {position: absolute; margin-left: 5.5556vw; margin-top: 6.9444vw; width: 20%;}
 .section.kv .img-box {margin:4.3056vw 0 0;height: 177.7778vw;overflow: hidden;}
 .section.kv .img-box > img {max-width:none; width:100%;}
 .section.kv .txt-box {position:absolute; top:39.0278vw; left:6.8056vw; color: #fff;}
@@ -260,7 +262,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .section .img-box .img-right{text-align: right;}
 .section .title-line .title-box .title-txt{display: flex; flex-direction: column;}
 .section .title-line .title-box .title-txt p{position: relative;}
-.section .title-line .title-box .title-txt p::before{content: ''; opacity: .1; height: 2.2222vw; position: absolute; bottom: 0.4167vw; left: 50%; transform: translateX(-50%);}
+.section .title-line .title-box .title-txt p::before{content: ''; opacity: .1; height: 4.4222vw; position: absolute; bottom: 0.4167vw; left: 50%; transform: translateX(-50%);}
 
 .section.chapter01 .content-main .iframe-box{margin-top: -15.7222vw;}
 .section.chapter01 .content-main .title-box{background-color: #ffffee;}
@@ -539,7 +541,7 @@ footer .footer-logo.halla{width: 25.0000vw; height: 9.4444vw;}
 /* --------------------
 	footer
 -------------------- */
-footer {margin-top:0; padding:12.5000vw 0 14.1667vw 5.5556vw; background-color:#fafafa; font-family:'NotoSansKR'; color:#666; font-size:3.8889vw; font-weight:300; letter-spacing:0;}
+footer {margin-top:0; padding:12.5000vw 6.1667vw 5.5556vw; background-color:#fafafa; font-family:'NotoSansKR'; color:#666; font-size:3.8889vw; font-weight:300; letter-spacing:0;}
 footer .btn-go-top {display:inline-block; margin-bottom:9.7222vw; color:#2794c7; font-family:'NotoSansKR'; font-weight:400;}
 footer .btn-go-top span {position:relative; padding-left:10.0000vw;  font-family:'NotoSansKR'; font-weight:500; line-height:8.3333vw;}
 /*footer .btn-go-top span::before {content:''; position:absolute; top:-20%; left:0; width:6.9444vw; height:8.6111vw; background:url('../img/sprites_2nd.png') no-repeat -1.3889vw -17.5000vw; background-size:43.7500vw 35.5556vw;}*/
@@ -674,14 +676,15 @@ footer .footer-logo img {width:100%;}
     .content-box p:last-child {margin-bottom:0;}
     .sub-txt{padding: 90px 0;font-size: 29px;}
     .tag-txt{font-size: 30px;}
-    .two-img img{width: 330px;}
+    .two-img img{width: 330px; height: 240px;}
     .three-img > div{margin-bottom: 40px;}
     .three-img > div > img{width: 200px;}
 
+    .img-box.iframe-box > iframe{width: 92vw; height: 69vw;} 
     .iframe-box {width:100%; height:405px;}
     .iframe-box > img {top:0; left:0; width:100%; height:100%;}
     .iframe-box > iframe {width:100%; height:100%; outline:0;}
-    .iframe-box > .btn-sound {top: 20px; right: 20px; width: 42px; height: 42px; background: url(../img/sound_off.png) no-repeat; background-size: 100% 100%;}
+    .iframe-box > .btn-sound {top: 25px; right: 30px; width: 42px; height: 42px; background: url(../img/sound_off.png) no-repeat; background-size: 100% 100%;}
     .iframe-box > .btn-sound.on {background: url(../img/sound_on.png) no-repeat; background-size: 100% 100%;}
 
     .title-box h2 {position:relative; margin:0 0 24px; padding:0; color:#62529a; font-size:50px; line-height:1; font-family:'NotoSerifKr-SemiBold';}

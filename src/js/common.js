@@ -716,5 +716,9 @@ $.fn.isInAnimated = function() {
       , elementBottom = elementTop + $(this).outerHeight()
       , viewportBottom = viewportTop + .9 * $(window).height();
     return elementBottom > viewportTop && elementTop < viewportBottom
-}
-;
+};
+
+var wow = new WOW(// default
+    {offset: 180}
+    );
+wow.init();
