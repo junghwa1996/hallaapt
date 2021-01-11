@@ -644,6 +644,7 @@ $(document).ready(function(){
 
 
 
+
     function setPlayer($this) {
         if ($this.attr('id')) {
             var idx = $this.data('idx');

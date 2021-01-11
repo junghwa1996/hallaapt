@@ -106,7 +106,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .iframe-box {position:relative; width:100%; height:56.2500vw;}
 .iframe-box > img {position:absolute; top:0; left:0; width:100%; height:100%;}
 .iframe-box > iframe {width:100%; height:100%; outline:0;}
-.iframe-box > .btn-sound {position: absolute; top: 2.7778vw; right: 2.7778vw; width: 8.3333vw; height: 8.3333vw; background: url(../img/sound_off.png) no-repeat; background-size: 100% 100%;}
+.iframe-box > .btn-sound {position: absolute; top: 3.7778vw; right: 4.7778vw; width: 8.3333vw; height: 8.3333vw; background: url(../img/sound_off.png) no-repeat; background-size: 100% 100%;}
 .iframe-box > .btn-sound.on {background: url(../img/sound_on.png) no-repeat;background-size: 100% 100%;}
 
 .sub-txt{padding: 12.5000vw 0; text-align: center; font-size: 4.0278vw; line-height: 1.5; font-weight: normal;}
