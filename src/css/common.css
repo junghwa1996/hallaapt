@@ -152,7 +152,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .momo-gnb .btn-gnb-open > i::after {content:''; position:absolute; top:0; left:0; width:100%; height:100%; border-radius:100%; background-color:#000; transform:translateY(200%);}
 .gnb-open-bg {display:none; position:fixed; z-index:1002; opacity:.25; width:100%; height:100%; top:0; right:0; background-color:#000;}
 .gnb-open-bg.on {display:block;}
-.gnb-open {position:fixed; z-index:1003; opacity:0; width:70%; height:100%; top:0; right:0; transform:translateX(100%); transition:all .3s;}
+.gnb-open {position:fixed; z-index:1003; opacity:0; width:70%; height:100%; top:0; right:0; transform:translateX(100%); transition:all .3s; background-color:#2aa0d7; overflow-y: auto;}
 .gnb-open.on {opacity:1; transform:translateX(0);}
 .gnb-open::before {content:''; position:absolute; z-index:-1; width:100%; height:100%; background-color:#2aa0d7; opacity:1;}
 .gnb-open .btn-gnb-close {position:absolute; top:3.8889vw; right:3.5556vw; width:5.8333vw; height:5.8333vw; padding:2.7778vw;}
@@ -359,7 +359,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .section.chapter01.ch-3 .information-txt ul li dl dt::before{background-color: #2794c7;}
 footer .footer-logo.halla{width: 25.0000vw; height: 9.4444vw;}
 
-.inner{padding-left: 2.7778vw; padding-right: 2.7778vw;}
+.inner{max-width: 95%; margin: 0 auto;}
 
 /* --------------------
 	event
@@ -648,8 +648,8 @@ footer .footer-logo img {width:100%;}
     .information-txt ul li dl dt::before{content: ''; width: 6px; height: 40px;left: -5px; top: 8px;}
     .information-txt ul li dl dd{padding-left: 20px;}
     footer .footer-logo.halla{width: 180px; height: 68px;}
-
-    .inner{padding-left: 20px; padding-right: 20px;}
+/* 
+    .inner{padding-left: 20px; padding-right: 20px;} */
 
     /* --------------------
         event
@@ -779,5 +779,5 @@ footer .footer-logo img {width:100%;}
 
 .small-iframe .preview-image{padding:0;}
 .chapter01.ch-3 .preview-image{padding:2.2% 0;} 
-.preview-image {z-index:10;opacity:1;visibility:visible;transition: all .3s .1s ease;padding:2.2% 2.8%;}
+.preview-image {z-index:10;opacity:1;visibility:visible;transition: all .3s .1s ease; padding:2.2% 0;}
 .preview-image.hide {opacity:0;visibility:hidden;}
