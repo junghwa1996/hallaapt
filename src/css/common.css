@@ -159,7 +159,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .gnb-open .btn-gnb-close > i {display:block; width:100%; height:100%; font-size:0; background:url('../img/sprites_2nd.png') no-repeat -36.2500vw -1.3889vw; background-size:43.7500vw 35.5556vw;}
 .gnb-open > ul {padding:16.6667vw 0 16.6667vw 6.9444vw; font-size:3.8889vw; font-weight:700; color:#fff; line-height:2.2;}
 .gnb-open > ul a {font-family: 'Gotham';display:inline-block; width:100%;}
-.gnb-open > ul > li:nth-child(1){margin-bottom: 3.8889vw; margin-top: 10.8889vw;}
+.gnb-open > ul > li:nth-child(1){margin-bottom: 3.8889vw; margin-top: 3.8889vw;}
 .gnb-open > ul > li:nth-child(4),
 .gnb-open > ul > li:nth-child(7),
 .gnb-open > ul > li:nth-child(10),
