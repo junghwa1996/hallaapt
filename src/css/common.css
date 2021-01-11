@@ -251,7 +251,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .section.kv .img-box video {height: 100%;object-fit: cover;background-size: contain;position: absolute;background-position: center center;z-index: -1;}
 .section.kv .txt-box h1 {position:relative; display:block; margin-bottom:3.3333vw; padding-bottom:7.2222vw; font-size:10.4167vw; line-height:1.3; font-weight: bold;}
 .section.kv .txt-box p {display:block; font-size:3.3333vw; line-height:1.8;}
-.floating-btn {position: fixed;left: 0;bottom: 10vw;z-index: 1;}
+.floating-btn {position: fixed;left: 0;bottom: 10vw;z-index: 1000;}
 .floating-btn button{width: 49.7222vw; height: 13.8889vw; background-color: #2aa0d7; font-size: 5.0000vw; color: #fff; font-weight: bold; border-radius: 0 6.9444vw 6.9444vw 0; box-shadow: 0.6944vw 0.2778vw 2.7778vw 0 rgba(0, 0, 0, 0.3); line-height: 2;}
 .floating-btn button span{width: 8.3333vw; height: 8.3333vw; display: inline-block;vertical-align: middle;}
 
@@ -358,7 +358,7 @@ footer .footer-logo.halla{width: 25.0000vw; height: 9.4444vw;}
 /* --------------------
 	event
 -------------------- */
-.section.event {position:static; padding:0 0 13.6111vw; background-color: #ffeeee;}
+.section.event {position:static; padding:0 0 13.6111vw; background-color: #d5ba9d;}
 
 .section.event .event-title{margin: 4.1667vw 0; text-align: center; padding: 6.8889vw 5.9444vw 3.8889vw;}
 .section.event .event-title h2{font-size: 6.9444vw; line-height: 2; font-weight: bold; padding-top: 2.7778vw;}
@@ -404,7 +404,7 @@ footer .footer-logo.halla{width: 25.0000vw; height: 9.4444vw;}
 .section.event .agree-box li:first-child.on ~ li {display:block;}
 
 .section.event .form-box .btn-wrap {padding-top:2.7778vw;text-align:center;}
-.section.event .form-box .btn-submit {width:100%; height:15.2778vw; margin:0 auto; background-color:#e06f6f; font-family:'NotoSansKR'; color:#fff; font-size:5.0000vw; font-weight:700; line-height: 1; letter-spacing:0;}
+.section.event .form-box .btn-submit {width:100%; height:15.2778vw; margin:0 auto; background-color:#da3d27; font-family:'NotoSansKR'; color:#fff; font-size:5.0000vw; font-weight:700; line-height: 1; letter-spacing:0;}
 .section.event .form-box .btn-submit p {padding-top:2.7778vw;font-size:3.3334vw; line-height:3.3334vw; color:#fff; text-align:center; font-family:'NotoSansKR';}
 
 .section.event .form-box .btn-notice {position:relative; display:inline-block; margin:6.9444vw auto 0;font-size:4.4444vw; font-family:'NotoSansKR'; font-weight: 400;color:#666;line-height:1; text-decoration: underline;}

@@ -140,13 +140,13 @@ $(document).ready((function() {
         )),
         scrollContent()
     }(),
-    $(".floating-btn").on("click", (function() {
-        var eventTop = $(".section.event").offset().top;
-        $("html, body").stop().animate({
-            scrollTop: eventTop
-        }, 700)
-    }
-    )),
+    // $(".floating-btn").on("click", (function() {
+    //     var eventTop = $(".section.event").offset().top;
+    //     $("html, body").stop().animate({
+    //         scrollTop: eventTop
+    //     }, 700)
+    // }
+    // )),
     $(".btn-go-top").on("click", (function(e) {
         e.preventDefault(),
         $("html, body").stop().animate({
@@ -316,8 +316,10 @@ $(".card-header").click(function(){
     }
 });
 
-var wow = new WOW(// default
-    {offset: 180}
-    );
-wow.init();
+$(".floating-btn").click(function() {
+    var eventTop = $(".section.event").offset();
+    $("html, body").stop().animate({scrollTop: eventTop.top}, 700);
+});
+
+
 

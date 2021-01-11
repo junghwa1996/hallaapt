@@ -87,7 +87,7 @@
                 <div class="floating-btn m-only">
                     <button>
                         분양 안내 받기
-                        <span class="wow fadeInDown " data-wow-iteration="infinite" data-wow-duration = "2s">
+                        <span class="wow fadeInDown " data-wow-iteration="infinite" data-wow-duration = "2s" style="visibility: visible;">
                             <img src="src/img/floating-btn.png" alt="">
                         </span>
                     </button>
@@ -778,9 +778,18 @@
     <!-- //momo-wrap -->
 
 	<script src="src/js/jquery-3.4.1.min.js"></script>
-	<script src="src/js/wow.min.js"></script>
 	<script src="src/js/slick.min.js"></script>
-	<script src="src/js/player.min.js"></script>
+    <script src="src/js/player.min.js"></script>
+	<script src="src/js/wow.min.js"></script>
     <script src="src/js/common.js"></script>
+    <script>
+        $(function(){
+            var wow = new WOW(// default
+            {offset: 180}
+            );
+        wow.init();
+        });
+
+    </script>
 </body>
 </html>
