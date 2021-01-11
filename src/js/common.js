@@ -36,13 +36,13 @@ $(document).ready(function(){
     var _windowHeight = $(window).outerHeight();
 
     var iframePlayer = [
-            { el: $('iframe')[0], player:null }
-            /*{ el: $('iframe')[1], player:null },
+            { el: $('iframe')[0], player:null },
+            { el: $('iframe')[1], player:null },
             { el: $('iframe')[2], player:null },
             { el: $('iframe')[3], player:null },
             { el: $('iframe')[4], player:null },
             { el: $('iframe')[5], player:null },
-            { el: $('iframe')[6], player:null }*/
+            { el: $('iframe')[6], player:null }
         ];
 
     var popScrollTop = 0;
@@ -65,233 +65,10 @@ $(document).ready(function(){
 		]
     });
 
-    // 평면도
-    $('.slider02').slick({
-		fade: true,
-		speed: 500,
-		dots: false,
-        arrows: false,
-		draggable: false,
-		touchMove: false,
-		pauseOnHover: false,
-        asNavFor: '.slider04',
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					pauseOnHover: false
-				}
-			}
-		]
-    });
-    
-    // 평면도팝업
-	$('.slider04').slick({
-		fade: false,
-		speed: 800,
-		dots: false,
-        arrows: false,
-		draggable: true,
-		touchMove: true,
-        pauseOnHover: true,
-        asNavFor: '.slider02',
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					pauseOnHover: false
-				}
-			}
-		]
-	});
-
-    // 갤러리
-	$('.slider05').slick({
-		fade: false,
-		speed: 800,
-		dots: true,
-		draggable: true,
-        touchMove: true,
-        slidesToShow: 2,
-        variableWidth: true,
-		pauseOnHover: true,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					pauseOnHover: false
-				}
-			}
-		]
-    });
-
-    // gallery-wide
-    $('.slider06').slick({
-        fade: false,
-		speed: 800,
-		dots: true,
-		draggable: true,
-		touchMove: true,
-        slidesToShow: 2,
-        variableWidth: true,
-        pauseOnHover: true,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					pauseOnHover: false
-				}
-			}
-		]
-    });
-
-    // gallery-detail
-    $('.slider07').slick({
-		fade: false,
-		speed: 800,
-		dots: true,
-		draggable: true,
-		touchMove: true,
-        slidesToShow: 2,
-        variableWidth: true,
-        pauseOnHover: true,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					pauseOnHover: false
-				}
-			}
-		]
-    });
-
-    $('.slider08').slick({
-        fade: true,
-        //autoplay: true,
-        //autoplaySpeed: 4000,
-		speed: 800,
-		dots: true,
-		draggable: true,
-		touchMove: true,
-        pauseOnHover: true,
-        arrows:true,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					pauseOnHover: false
-				}
-			}
-		]
-    });
-
-    $('.slider09').slick({
-        fade: true,
-        //autoplay: true,
-        //autoplaySpeed: 4000,
-		speed: 800,
-		dots: true,
-		draggable: true,
-		touchMove: true,
-        pauseOnHover: true,
-        arrows:true,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					pauseOnHover: false
-				}
-			}
-		]
-    });
-
-    $('.slider10').slick({
-        fade: true,
-        //autoplay: true,
-        //autoplaySpeed: 4000,
-		speed: 800,
-		dots: true,
-		draggable: true,
-		touchMove: true,
-        pauseOnHover: true,
-        arrows:true,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					pauseOnHover: false
-				}
-			}
-		]
-    });
-
-    $('.slider11').slick({
-        fade: true,
-        //autoplay: true,
-        //autoplaySpeed: 4000,
-		speed: 800,
-		dots: true,
-		draggable: true,
-		touchMove: true,
-        pauseOnHover: true,
-        arrows:true,
-        initialSlide:0,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					pauseOnHover: false
-				}
-			}
-		]
-    });
-
     $('.slider').slick('setPosition');
     $('.slider').on('touchstart', '.slick-slide', function(){});
     $('.floating-banner').on('touchstart', function(){});
-    
-    $('.slider02').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        $('.section.plan .btn-wrap a:eq(' + nextSlide + ')').addClass('on').siblings().removeClass('on');
-    });
 
-    $('.slider03').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        var target = $(this).siblings('.title-box').find('p');
-        var txtList = ['Traffic', 'Education', 'Life', 'Nature'];
-
-        target.html('<span><i>#</i> '+ txtList[nextSlide] +'</span>');
-    });
-
-    $('.slider04').on('afterChange', function(event, slick, currentSlide) {
-        $(this).find('.img-box').scrollTop(0);
-    });
-
-    $('.slider08').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        var target = $(this).siblings('.title-box').find('p');
-        var txtList = ['1Floor', '2Floor', '3Floor', 'Roof Top'];
-
-        target.html('<span><i>A-S</i><i>B-S</i> '+ txtList[nextSlide] +'</span>');
-    });
-
-    $('.slider09').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        var target = $(this).siblings('.title-box').find('p');
-        var txtList = ['1Floor', '2Floor', '3Floor', 'Roof Top'];
-
-        target.html('<span><i>A-N</i><i>B-N</i> '+ txtList[nextSlide] +'</span>');
-    });
-
-    $('.slider10').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        var target = $(this).siblings('.title-box').find('p');
-        var txtList = ['B1-Parking', '1Floor', '2Floor', 'Roof Top'];
-
-        target.html('<span><i>C</i><i>D</i> '+ txtList[nextSlide] +'</span>');
-    });
-
-    $('.slider11').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        var target = $(this).siblings('.title-box').find('p');
-        var txtList = ['1Floor', '2Floor', '3Floor', 'Roof Top'];
-
-        target.html('<span><i>E</i><i>F</i> '+ txtList[nextSlide] +'</span>');
-    });
 
     // vr 모바일: 레이어팝업 / pc: 새창으로 열기
     $('.vr-wrap').on('click', '.btn-show-vr', function() {
@@ -635,14 +412,11 @@ $(document).ready(function(){
         $this.toggleClass('on');
     });
 
+
     $('.floating-btn button').click(function(){
         var offset = $('.section.event').offset(); 
         $('html').animate({scrollTop : offset.top}, 1000);
     });
-
-
-
-
 
 
     function setPlayer($this) {
