@@ -226,26 +226,40 @@ $(document).ready((function() {
         $("html, body").scrollTop(popScrollTop)
     }
     )),
-    // $(".momo-gnb li").on("click", "a", (function(e) {
-    //     e.preventDefault(),
-    //     $(".gnb-open, .gnb-open-bg").removeClass("on"),
-    //     $("body").removeClass("scroll-lock"),
-    //     $("body").removeAttr("style"),
-    //     $("html, body").scrollTop(popScrollTop);
-    //     var $this, index = $(this).parent().index();
-    //     0 == index ? $("html, body").stop().animate({
-    //         scrollTop: $(".kv").offset().top
-    //     }, 700) : 1 == index ? $("html, body").stop().animate({
-    //         scrollTop: $(".sec01").offset().top
-    //     }, 700) : 2 == index ? $("html, body").stop().animate({
-    //         scrollTop: $(".sec04").offset().top
-    //     }, 700) : 3 == index ? $("html, body").stop().animate({
-    //         scrollTop: $(".sec08").offset().top
-    //     }, 700) : 4 == index && $("html, body").stop().animate({
-    //         scrollTop: $(".event").offset().top
-    //     }, 700)
-    // }
-    // )),
+    $(".momo-gnb li").on("click", "a", (function(e) {
+        e.preventDefault(),
+        $(".gnb-open, .gnb-open-bg").removeClass("on"),
+        $("body").removeClass("scroll-lock"),
+        $("body").removeAttr("style"),
+        $("html, body").scrollTop(popScrollTop);
+        var $this, index = $(this).parent().index();
+        0 == index ? $("html, body").stop().animate({
+            scrollTop: $(".kv").offset().top
+        }, 700) : 1 == index ? $("html, body").stop().animate({
+            scrollTop: $(".chapter01").offset().top
+        }, 700) : 2 == index ? $("html, body").stop().animate({
+            scrollTop: $(".emeblem").offset().top
+        }, 700) : 3 == index ? $("html, body").stop().animate({
+            scrollTop: $(".location").offset().top
+        }, 700) : 4 == index ? $("html, body").stop().animate({
+            scrollTop: $(".chapter02").offset().top
+        }, 700) : 5 == index ? $("html, body").stop().animate({
+            scrollTop: $(".interview").offset().top
+        }, 700) : 6 == index ? $("html, body").stop().animate({
+            scrollTop: $(".FAQ").offset().top
+        }, 700) : 7 == index ? $("html, body").stop().animate({
+            scrollTop: $(".chapter03").offset().top
+        }, 700) : 8 == index ? $("html, body").stop().animate({
+            scrollTop: $(".vivaldi").offset().top
+        }, 700) : 9 == index ? $("html, body").stop().animate({
+            scrollTop: $(".modelHouse").offset().top
+        }, 700) : 10 == index ? $("html, body").stop().animate({
+            scrollTop: $(".event").offset().top
+        }, 700) : 11 == index && $("html, body").stop().animate({
+            scrollTop: $(".event").offset().top
+        }, 700)
+    }
+    )),
     $(".btn-submit").on("click", (function() {
         fbq("track", "ec_submit_82257"),
         gtag("event", "click", {
