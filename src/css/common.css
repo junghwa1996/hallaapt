@@ -768,3 +768,12 @@ footer .footer-logo img {width:100%;}
 @media (min-width:769px) and (max-width:1166px) {
     .section.event {left:775px;}
 }
+.section.kv .txt-box {z-index:20;}
+
+.kv-video {opacity: 0; transition: opacity .6s .1s ease;}
+.kv-video.show {opacity: 1;}
+.kv-image {z-index:10;opacity:1; transition: opacity .6s .1s ease;}
+.kv-image.hide {opacity: 0;}
+
+.preview-image {z-index:10;opacity:1;visibility:visible;transition: all .3s .1s ease;}
+.preview-image.hide {opacity:0;visibility:hidden;}
