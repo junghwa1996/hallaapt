@@ -168,7 +168,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .gnb-open > ul li.gnb-main-title span{font-size: 3.0556vw; color: #126397}
 .gnb-open > ul li.gnb-main-title P{font-family: 'NotoSansKR',sans-serif; font-size: 5.2778vw; font-weight: 400; line-height: 5.5556vw; letter-spacing: -0.1389vw;}
 .gnb-open > ul li.gnb-sub-title{line-height: 1.5;}
-.gnb-open > ul li.gnb-sub-title a{font-family: 'Gotham Rounded';font-size: 3.0556vw; font-weight: 300;}
+.gnb-open > ul li.gnb-sub-title a{font-family: 'Gotham Rounded';font-size: 4.0556vw; font-weight: 300;}
 
 
 /* .gnb-open > ul > li.gnb-main-title{margin-bottom: 6.8056vw;} */
