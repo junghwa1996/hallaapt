@@ -93,7 +93,7 @@ $(document).ready(function(){
             var $window = $(window);
             var bannerTimeout;
             var isBanner;
-            var $viewport = $('.momo-wrap .container');
+            var $viewport = $('.momo-wrap');
 
             // window 스크롤 시
             $window.on("scroll", function() {
