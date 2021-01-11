@@ -635,37 +635,12 @@ $(document).ready(function(){
         $this.toggleClass('on');
     });
 
-    // 지도 버튼 클릭 시 해당 img slider로 이동
-    $('.map-button button').click(function() {
-        var slideNo = $(this).index();
-        $('.map-img').slick('slickGoTo', slideNo);
-    });
-
-    //아코디언 FAQ
-    $(".card-header").click(function(){
-        // self clicking close
-        if($(this).next(".card-body").hasClass("active")){
-            $(this).next(".card-body").removeClass("active").slideUp();	
-            $(this).children("a").removeClass("active");
-        }
-        else{
-            $(".card-body").removeClass("active").slideUp();
-            $(".card-header a").removeClass("active");
-            $(this).next(".card-body").addClass("active").slideDown();
-            $(this).children("a").addClass("active");
-        }
-    });
-
     $('.floating-btn button').click(function(){
-
         var offset = $('.section.event').offset(); 
         $('html').animate({scrollTop : offset.top}, 1000);
-
     });
 
 
-
-출처: https://appsnuri.tistory.com/411 [이야기앱 세상]
 
 
 
@@ -693,16 +668,52 @@ $(document).ready(function(){
     }
 });
 
-// 20200309
-$.fn.isInViewport = function(box, detail) {
-    var boxLeft = box ? box.offset().left : 0;
-    var boxRight = boxLeft + (box ? box.outerWidth() : $(window).width());  
-    var viewportTop = $(window).scrollTop();
-    var elementTop = $(this).offset().top;
-    var elementBottom = elementTop + $(this).outerHeight();
-    var elementLeft = $(this).offset().left;
-    var elementRight = elementLeft + $(this).outerWidth();
-    var viewportBottom = viewportTop + $(window).height();
+// 전체동의 체크
+$("#agree01").click(function(){
+    if($("#agree01").prop("checked")) { 
+        $("input[type=checkbox]").prop("checked",true); 
+    } else {
+        $("input[type=checkbox]").prop("checked",false); } 
+});
+// 지도 버튼 클릭 시 해당 img slider로 이동
+$('.map-button button').click(function() {
+    var slideNo = $(this).index();
+    $('.map-img').slick('slickGoTo', slideNo);
+});
 
-    return detail ? (elementBottom > viewportTop && elementTop < viewportBottom && elementLeft >= boxLeft - 20 && elementRight <= boxRight) : (elementTop >= viewportTop && elementBottom < viewportBottom && elementLeft >= boxLeft - 20 && elementRight <= boxRight);
-};
+//아코디언 FAQ
+$(".card-header").click(function(){
+    // self clicking close
+    if($(this).next(".card-body").hasClass("active")){
+        $(this).next(".card-body").removeClass("active").slideUp();	
+        $(this).children("a").removeClass("active");
+    }
+    else{
+        $(".card-body").removeClass("active").slideUp();
+        $(".card-header a").removeClass("active");
+        $(this).next(".card-body").addClass("active").slideDown();
+        $(this).children("a").addClass("active");
+    }
+});
+
+
+$.fn.isInViewport = function(box, detail) {
+    var boxLeft = box ? box.offset().left : 0
+      , boxRight = boxLeft + (box ? box.outerWidth() : $(window).width())
+      , viewportTop = $(window).scrollTop()
+      , elementTop = $(this).offset().top
+      , elementBottom = elementTop + $(this).outerHeight()
+      , elementLeft = $(this).offset().left
+      , elementRight = elementLeft + $(this).outerWidth()
+      , viewportBottom = viewportTop + $(window).height();
+    return detail ? elementBottom > viewportTop && elementTop < viewportBottom && elementLeft >= boxLeft - 20 && elementRight <= boxRight : elementTop >= viewportTop && elementBottom < viewportBottom && elementLeft >= boxLeft - 20 && elementRight <= boxRight
+}
+,
+$.fn.isInAnimated = function() {
+    var viewportTop = $(window).scrollTop()
+      , elementTop = $(this).offset().top
+      , elementBottom = elementTop + $(this).outerHeight()
+      , viewportBottom = viewportTop + .9 * $(window).height();
+    return elementBottom > viewportTop && elementTop < viewportBottom
+}
+;
