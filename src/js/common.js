@@ -61,6 +61,23 @@ $(document).ready((function() {
         }
         ))
     }
+    // steven
+function setPlayerKv($this) {
+    var id = $this.attr("id")
+      , src = $this.data("src")
+      , _this = {};
+
+    $this.attr("src", src),
+    _this.player = new Zigbang.Player($this),
+    _this.player.on("play", (function() {
+        //console.log("kv play");
+  $("#video01").addClass("show");
+  $(".kv-image").addClass("hide");
+    })),
+    _this.player.on("pause", (function() {
+        //console.log("kv pause");
+    }))
+}
     $(".slider").slick({
         speed: 600,
         dots: !0,
@@ -111,7 +128,9 @@ $(document).ready((function() {
                         paused || item.player.pause()
                     }
                     )) : !item.player && $(item.el).isInViewport($viewport, !0) ? $(item.el).attr("src") || setPlayer($(item.el)) : item.player && $(item.el).isInViewport($viewport, !0) && ($(item.el).data("auto") || item.player.getPaused().then((function(paused) {
-                        paused && item.player.play()
+                        paused && item.player.play();
+                        // steven
+                $(item.el).siblings(".preview-image").addClass("hide");
                     }
                     )))
                 }
@@ -131,11 +150,12 @@ $(document).ready((function() {
             }
             ))
         }
-        $("iframe").each((function() {
-            $(this).attr("id") && iframePlayer.push({
-                el: $(this)[0],
-                player: null
-            })
+        // steven
+      $("iframe").not(".not_scroll").each((function() {
+        $(this).attr("id") && iframePlayer.push({
+            el: $(this)[0],
+            player: null
+        });
         }
         )),
         scrollContent()
@@ -278,7 +298,9 @@ $(document).ready((function() {
         $this.toggleClass("on")
     }
     )),
-    setPlayer($("#video01"));
+    // steven
+  setPlayerKv($("#video01"));
+  //    setPlayer($("#video01"));
 }
 )),
 $.fn.isInViewport = function(box, detail) {
