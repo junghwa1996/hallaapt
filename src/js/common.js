@@ -17,7 +17,7 @@ $(document).ready(function(){
     var _windowHeight = $(window).outerHeight();
   
     var iframePlayer = [
-            { el: $('iframe')[0], player:null },
+            // { el: $('iframe')[0], player:null },
             { el: $('iframe')[1], player:null },
             { el: $('iframe')[2], player:null },
             { el: $('iframe')[3], player:null },
