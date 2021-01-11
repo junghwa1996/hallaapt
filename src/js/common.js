@@ -140,7 +140,7 @@ $(document).ready((function() {
         )),
         scrollContent()
     }(),
-    $(".floating-banner").on("click", (function() {
+    $(".floating-btn").on("click", (function() {
         var eventTop = $(".section.event").offset().top;
         $("html, body").stop().animate({
             scrollTop: eventTop
@@ -226,26 +226,26 @@ $(document).ready((function() {
         $("html, body").scrollTop(popScrollTop)
     }
     )),
-    $(".momo-gnb li").on("click", "a", (function(e) {
-        e.preventDefault(),
-        $(".gnb-open, .gnb-open-bg").removeClass("on"),
-        $("body").removeClass("scroll-lock"),
-        $("body").removeAttr("style"),
-        $("html, body").scrollTop(popScrollTop);
-        var $this, index = $(this).parent().index();
-        0 == index ? $("html, body").stop().animate({
-            scrollTop: $(".kv").offset().top
-        }, 700) : 1 == index ? $("html, body").stop().animate({
-            scrollTop: $(".sec01").offset().top
-        }, 700) : 2 == index ? $("html, body").stop().animate({
-            scrollTop: $(".sec04").offset().top
-        }, 700) : 3 == index ? $("html, body").stop().animate({
-            scrollTop: $(".sec08").offset().top
-        }, 700) : 4 == index && $("html, body").stop().animate({
-            scrollTop: $(".event").offset().top
-        }, 700)
-    }
-    )),
+    // $(".momo-gnb li").on("click", "a", (function(e) {
+    //     e.preventDefault(),
+    //     $(".gnb-open, .gnb-open-bg").removeClass("on"),
+    //     $("body").removeClass("scroll-lock"),
+    //     $("body").removeAttr("style"),
+    //     $("html, body").scrollTop(popScrollTop);
+    //     var $this, index = $(this).parent().index();
+    //     0 == index ? $("html, body").stop().animate({
+    //         scrollTop: $(".kv").offset().top
+    //     }, 700) : 1 == index ? $("html, body").stop().animate({
+    //         scrollTop: $(".sec01").offset().top
+    //     }, 700) : 2 == index ? $("html, body").stop().animate({
+    //         scrollTop: $(".sec04").offset().top
+    //     }, 700) : 3 == index ? $("html, body").stop().animate({
+    //         scrollTop: $(".sec08").offset().top
+    //     }, 700) : 4 == index && $("html, body").stop().animate({
+    //         scrollTop: $(".event").offset().top
+    //     }, 700)
+    // }
+    // )),
     $(".btn-submit").on("click", (function() {
         fbq("track", "ec_submit_82257"),
         gtag("event", "click", {
@@ -264,12 +264,7 @@ $(document).ready((function() {
         $this.toggleClass("on")
     }
     )),
-    setPlayer($("#video01")),
-    setTimeout((function() {
-        $(".section.kv").addClass("animated"),
-        $(window).innerWidth() >= 769 && $(".section.event").addClass("animated")
-    }
-    ), 150)
+    setPlayer($("#video01"));
 }
 )),
 $.fn.isInViewport = function(box, detail) {
@@ -320,6 +315,26 @@ $(".card-header").click(function(){
         $(this).children("a").addClass("active");
     }
 });
+
+// $(".momo-gnb li a").click(function() {
+//     var scrollPosition = $($(this).attr("data-target")).offset().top;
+  
+//     $("body").animate({
+//           scrollTop: scrollPosition
+//     }, 500);
+//   });
+
+$(".momo-gnb li a").click(function(event){            
+    e.preventDefault(),
+    $(".gnb-open, .gnb-open-bg").removeClass("on"),
+    $("body").removeClass("scroll-lock"),
+    $("body").removeAttr("style"),
+    $("html, body").scrollTop(popScrollTop);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+
+});
+
+
 
 
 var wow = new WOW(// default
