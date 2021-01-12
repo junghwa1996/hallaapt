@@ -144,9 +144,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 @keyframes fadeInRight {0% {opacity: 0;-webkit-transform: translateX(20px);-ms-transform: translateX(20px);transform: translateX(20px);}100% {opacity: 1;-webkit-transform: translateX(0);-ms-transform: translateX(0);transform: translateX(0);}}
 .fadeInRight {-webkit-animation-name: fadeInRight;animation-name: fadeInRight;}
 /* 20210112 */
-@-webkit-keyframes shakeY {0%,to {-webkit-transform: translateZ(0);transform: translateZ(0)}10%,30%,50%,70%,90% {-webkit-transform: translate3d(0,-3px,0);transform: translate3d(0,-3px,0)}20%,40%,60%,80% {-webkit-transform: translate3d(0,3px,0);transform: translate3d(0,3px,0)}}
-@keyframes shakeY {0%,to {    -webkit-transform: translateZ(0);    transform: translateZ(0)}10%,30%,50%,70%,90% {-webkit-transform: translate3d(0,-3px,0);transform: translate3d(0,-3px,0)}20%,40%,60%,80% {-webkit-transform: translate3d(0,3px,0);transform: translate3d(0,3px,0)}}
-.shakeY {-webkit-animation-name: shakeY;animation-name: shakeY;}
+@keyframes motion {0% {margin-top: 0px;}100% {margin-top: 10px;}}
 
 /* --------------------
 	gnb
@@ -262,9 +260,9 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .section.kv .img-box video {height: 100%;object-fit: cover;background-size: contain;position: absolute;background-position: center center;z-index: -1;}
 .section.kv .txt-box h1 {position:relative; display:block; margin-bottom:3.3333vw; padding-bottom:7.2222vw; font-size:10.4167vw; line-height:1.3; font-weight: bold;}
 .section.kv .txt-box p {display:block; font-size:3.3333vw; line-height:1.8;}
-.floating-btn {position: fixed;left: 0;bottom: 10vw;z-index: 1000;}
+.floating-btn {position: fixed;left: 0;bottom: 10vw;z-index: 1000; height: 16.6667vw;}
 .floating-btn button{width: 49.7222vw; height: 13.8889vw; background-color: #2aa0d7; font-size: 5.0000vw; color: #fff; font-weight: bold; border-radius: 0 6.9444vw 6.9444vw 0; box-shadow: 0.6944vw 0.2778vw 2.7778vw 0 rgba(0, 0, 0, 0.3); line-height: 2;}
-.floating-btn button:after{display:inline-block;content:"";width: 8.3333vw; height: 8.3333vw;vertical-align: middle;background-image:url('../img/floating-btn.png');background-size: contain;margin-left:2vw;}
+.floating-btn button:after{display:inline-block;content:"";width: 8.3333vw; height: 8.3333vw;vertical-align: middle;background-image:url('../img/floating-btn.png');background-size: cover;margin-left:2vw;}
 .floating-btn button span{ display: inline-block;}
 
 /* --------------------
@@ -791,3 +789,4 @@ footer .footer-logo img {width:100%;}
 
 .floating-banner {opacity: 0;pointer-events: none;transition: opacity .3s;}
 .floating-banner.on {opacity: 1;pointer-events: auto;}
+.floating-banner button{ animation: motion 1s ease 0s infinite alternate;}
