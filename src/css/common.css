@@ -264,8 +264,8 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .section.kv .txt-box p {display:block; font-size:3.3333vw; line-height:1.8;}
 .floating-btn {position: fixed;left: 0;bottom: 10vw;z-index: 1000;}
 .floating-btn button{width: 49.7222vw; height: 13.8889vw; background-color: #2aa0d7; font-size: 5.0000vw; color: #fff; font-weight: bold; border-radius: 0 6.9444vw 6.9444vw 0; box-shadow: 0.6944vw 0.2778vw 2.7778vw 0 rgba(0, 0, 0, 0.3); line-height: 2;}
-.floating-btn button span{width: 8.3333vw; height: 8.3333vw; display: inline-block;vertical-align: middle;}
-
+.floating-btn button:after{display:inline-block;content:"";width: 8.3333vw; height: 8.3333vw;vertical-align: middle;background-image:url('../img/floating-btn.png');background-size: contain;margin-left:2vw;}
+.floating-btn button span{ display: inline-block;}
 
 /* --------------------
     chapter01
@@ -788,3 +788,6 @@ footer .footer-logo img {width:100%;}
 .chapter01.ch-3 .preview-image{padding:2.2% 0;} 
 .preview-image {z-index:10;opacity:1;visibility:visible;transition: all .3s .1s ease; padding:2.2% 0;}
 .preview-image.hide {opacity:0;visibility:hidden;}
+
+.floating-banner {opacity: 0;pointer-events: none;transition: opacity .3s;}
+.floating-banner.on {opacity: 1;pointer-events: auto;}

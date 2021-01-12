@@ -245,6 +245,27 @@ function setPlayerKv($this) {
     }
     )),
     $(".btn-submit").on("click", (function() {
+        
+        var len = $(".checkMust").length,
+        phone = $("#phone").val(),
+        reg = /^01([0|1|6|7|8|9]{1})([0-9]{3,4})([0-9]{4})$/;
+
+        if($(".checkMust:checked").length < len) {
+        customAlert('필수 약관에 동의해 주세요.');
+        return;
+        }
+
+        if(phone == '') {
+        customAlert('연락처를 입력해주세요.');
+        $("#phone").focus();
+        return;
+        }
+
+        if(!reg.test(phone)) {
+        customAlert('연락처가 잘못 입력되었습니다. 다시 한 번 확인해 주세요.');
+        $("#phone").focus();
+        return;
+    }
         fbq("track", "ec_submit_82257"),
         gtag("event", "click", {
             event_category: "invitation"
@@ -328,6 +349,16 @@ $(".floating-btn").click(function() {
     var eventTop = $(".section.event").offset();
     $("html, body").stop().animate({scrollTop: eventTop.top}, 700);
 });
-
+function customAlert(txt) {
+    var popTimer;
+    
+    clearTimeout(popTimer);
+    
+    $(".term-check").html(txt);
+    $(".term-check").show();
+      popTimer = setTimeout(function() {
+      $(".term-check").hide()
+    }, 3e3);
+    }
 
 
