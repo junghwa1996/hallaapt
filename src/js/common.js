@@ -1,42 +1,6 @@
-function gtag() {
-    dataLayer.push(arguments)
-}
-function gtag_report_conversion(url) {
-    var callback;
-    return gtag("event", "conversion", {
-        send_to: "AW-822803807/38ZBCPas9uwBEN_6q4gD",
-        transaction_id: "",
-        event_callback: function() {
-            void 0 !== url && (window.location = url)
-        }
-    }),
-    !1
-}
-window.dataLayer = window.dataLayer || [],
-gtag("js", new Date),
-gtag("config", "AW-822803807"),
-gtag("config", "UA-173917921-11"),
+
 $(document).ready((function() {
-    var f, b, e, v, n, t, s;
-    f = window,
-    b = document,
-    e = "script",
-    v = "https://connect.facebook.net/en_US/fbevents.js",
-    f.fbq || (n = f.fbq = function() {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-    }
-    ,
-    f._fbq || (f._fbq = n),
-    n.push = n,
-    n.loaded = !0,
-    n.version = "2.0",
-    n.queue = [],
-    (t = b.createElement(e)).async = !0,
-    t.src = v,
-    (s = b.getElementsByTagName(e)[0]).parentNode.insertBefore(t, s)),
-    fbq("init", "768145149939813"),
-    fbq("track", "PageView"),
-    fbq("track", "ec_pageview_82257");
+
     var _windowHeight = $(window).outerHeight()
       , iframePlayer = []
       , scrollAnimate = $(".scroll-animate")
