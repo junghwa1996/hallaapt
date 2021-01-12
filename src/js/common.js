@@ -295,6 +295,14 @@ $("#agree01").click(function(){
     } else {
         $("input[type=checkbox]").prop("checked",false); } 
 });
+$(".checkList").click(function(){
+    var len = $(".checkList").length;
+ 
+     if($(".checkList:checked").length < len) { 
+         $("#agree01").prop("checked",false); 
+     } else {
+         $("#agree01").prop("checked",true);  } 
+ });
 // 지도 버튼 클릭 시 해당 img slider로 이동
 $('.map-button button').click(function() {
     var slideNo = $(this).index();
