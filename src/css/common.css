@@ -143,6 +143,11 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 @-webkit-keyframes fadeInRight {0% {opacity: 0;-webkit-transform: translateX(20px);transform: translateX(20px);}100% {opacity: 1;-webkit-transform: translateX(0);transform: translateX(0);}}
 @keyframes fadeInRight {0% {opacity: 0;-webkit-transform: translateX(20px);-ms-transform: translateX(20px);transform: translateX(20px);}100% {opacity: 1;-webkit-transform: translateX(0);-ms-transform: translateX(0);transform: translateX(0);}}
 .fadeInRight {-webkit-animation-name: fadeInRight;animation-name: fadeInRight;}
+/* 20210112 */
+@-webkit-keyframes shakeY {0%,to {-webkit-transform: translateZ(0);transform: translateZ(0)}10%,30%,50%,70%,90% {-webkit-transform: translate3d(0,-3px,0);transform: translate3d(0,-3px,0)}20%,40%,60%,80% {-webkit-transform: translate3d(0,3px,0);transform: translate3d(0,3px,0)}}
+@keyframes shakeY {0%,to {    -webkit-transform: translateZ(0);    transform: translateZ(0)}10%,30%,50%,70%,90% {-webkit-transform: translate3d(0,-3px,0);transform: translate3d(0,-3px,0)}20%,40%,60%,80% {-webkit-transform: translate3d(0,3px,0);transform: translate3d(0,3px,0)}}
+.shakeY {-webkit-animation-name: shakeY;animation-name: shakeY;}
+
 /* --------------------
 	gnb
 -------------------- */
@@ -422,7 +427,7 @@ footer .footer-logo.halla{width: 25.0000vw; height: 9.4444vw;}
 /* --------------------
 	footer
 -------------------- */
-footer {margin-top:0; padding:12.5000vw 6.1667vw 5.5556vw; background-color:#fafafa; font-family:'NotoSansKR'; color:#666; font-size:3.8889vw; font-weight:300; letter-spacing:0;}
+footer {margin-top:0; padding:12.5000vw 0 6.1667vw 5.5556vw; background-color:#fafafa; font-family:'NotoSansKR'; color:#666; font-size:3.8889vw; font-weight:300; letter-spacing:0;}
 footer .btn-go-top {display:inline-block; margin-bottom:9.7222vw; color:#2794c7; font-family:'NotoSansKR'; font-weight:400;}
 footer .btn-go-top span {position:relative; padding-left:10.0000vw;  font-family:'NotoSansKR'; font-weight:500; line-height:8.3333vw;}
 /*footer .btn-go-top span::before {content:''; position:absolute; top:-20%; left:0; width:6.9444vw; height:8.6111vw; background:url('../img/sprites_2nd.png') no-repeat -1.3889vw -17.5000vw; background-size:43.7500vw 35.5556vw;}*/
@@ -697,7 +702,9 @@ footer .footer-logo img {width:100%;}
     /* --------------------
         footer
     -------------------- */
-    footer {margin-top:96px; padding:58px 30px 50px; font-size:18px;}
+    
+    /* 20210112 footer padding 수정*/
+    footer {margin-top:96px; padding:58px 0 30px 50px; font-size:18px;}
     footer .btn-go-top {margin-bottom:70px;}
     footer .btn-go-top span {padding-left:72px; line-height:60px;}
     footer .btn-go-top span::before {top:-20%; left:0; width:50px; height:62px; background-position:-10px -126px; background-size:315px 256px;}
