@@ -252,7 +252,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 	kv
 -------------------- */
 .section.kv {padding:0;height: 177.7778vw;}
-.section.kv .logo {position: absolute; margin-left: 5.5556vw; margin-top: 6.9444vw; width: 20%;}
+.section.kv .logo {position: absolute; margin-left: 5.5556vw; margin-top: 6.9444vw; width: 20%; z-index: 100;}
 .section.kv .img-box {margin:4.3056vw 0 0;height: 177.7778vw;overflow: hidden;}
 .section.kv .img-box > img {max-width:none; width:100%;}
 .section.kv .iframe-box{height: 100%;}
