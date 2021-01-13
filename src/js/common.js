@@ -285,6 +285,13 @@ function setPlayerKv($this) {
     // steven
   setPlayerKv($("#video01"));
   //    setPlayer($("#video01"));
+  $('.slider01').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+    if(currentSlide == 0){
+        $('.map-img').slick('slickGoTo', 0);
+    }else if(currentSlide == 1){
+        $('.map-img').slick('slickGoTo', 14);
+    }
+});
 }
 )),
 $.fn.isInViewport = function(box, detail) {
