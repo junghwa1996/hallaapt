@@ -42,8 +42,15 @@ function setPlayerKv($this) {
         //console.log("kv pause");
     }))
 }
-    $(".slider").slick({
+    $(".slider01").slick({
         speed: 600,
+        dots: !0,
+        arrows: !0
+    }),
+    // 20210113
+    $(".slider02").slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
         dots: !0,
         arrows: !0
     }),
@@ -361,5 +368,7 @@ function customAlert(txt) {
       $(".term-check").hide()
     }, 3e3);
     }
+
+
 
 
