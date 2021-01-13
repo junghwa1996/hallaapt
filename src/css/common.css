@@ -169,8 +169,9 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .gnb-open > ul > li:nth-child(12){margin-bottom: 3.8889vw;}
 .gnb-open > ul > li:nth-child(1) a{font-size: 4.1667vw;}
 .gnb-open > ul li.gnb-main-title span{font-size: 3.0556vw; color: #126397}
-.gnb-open > ul li.gnb-main-title P{font-family: 'NotoSansKR',sans-serif; font-size: 5.2778vw; font-weight: 400; line-height: 5.5556vw; letter-spacing: -0.1389vw;}
-.gnb-open > ul li.gnb-sub-title{line-height: 1.5;}
+/* 20210113 */
+.gnb-open > ul li.gnb-main-title P{font-family: 'NotoSansKR',sans-serif; font-size: 5.2778vw; font-weight: 400; line-height: 2.5; letter-spacing: -0.1389vw;}
+.gnb-open > ul li.gnb-sub-title{line-height: 2;}
 .gnb-open > ul li.gnb-sub-title a{font-family: 'Gotham Rounded';font-size: 4.0556vw; font-weight: 300;}
 
 
@@ -277,6 +278,8 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 
 .section .img-box .photo{margin-bottom: 13.1944vw;}
 .section .img-box .photo.img-right > img ,.section .img-box .photo.img-left > img{width: 70%;}
+/* 20210113 */
+.section .img-box.interview-photo .photo.img-right > img ,.section .img-box.interview-photo .photo.img-left > img {width: 90%;}
 .section .img-box .img-right{text-align: right;}
 .section .title-line .title-box .title-txt{display: flex; flex-direction: column;}
 .section .title-line .title-box .title-txt p{position: relative;}
@@ -332,7 +335,8 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .FAQ .accodion .card-header a.active{font-weight: bold; color: #b37f62;}
 .FAQ .accodion .card-body{display: none; margin: 5.5556vw 0 4.1667vw; }
 .FAQ .accodion ul li:nth-child(1) .card-body{display: block;}
-.FAQ .accodion .card-body p{font-size: 3.7500vw; color: #8a614a; font-weight: normal;line-height: 1.5; padding: 2.7778vw 3.4722vw; background-color: #f5d8c6; border-radius: 2.7778vw;position: relative;}
+/* 20210113 color */
+.FAQ .accodion .card-body p{font-size: 3.7500vw; color: #684b39; font-weight: normal;line-height: 1.5; padding: 2.7778vw 3.4722vw; background-color: #f5d8c6; border-radius: 2.7778vw;position: relative;}
 .FAQ .accodion .card-body p::before{content: ''; background: url(../img/icon-tail.png) no-repeat; background-size: cover; width: 6.1111vw; height:2.7778vw; position: absolute; top: -2.7778vw; left: 30%;}
 .section.chapter01.ch-2 .title-line .title-box .title-txt{color: #a77458;}
 .section.chapter01.ch-2 .title-line .title-box .title-txt p::before{background-color: #a77458;}

@@ -94,7 +94,7 @@ function setPlayerKv($this) {
                     )) : !item.player && $(item.el).isInViewport($viewport, !0) ? $(item.el).attr("src") || setPlayer($(item.el)) : item.player && $(item.el).isInViewport($viewport, !0) && ($(item.el).data("auto") || item.player.getPaused().then((function(paused) {
                         paused && item.player.play();
                         // steven
-                $(item.el).siblings(".preview-image").addClass("hide");
+                // $(item.el).siblings(".preview-image").addClass("hide");
                     }
                     )))
                 }
@@ -346,7 +346,8 @@ $(".card-header").click(function(){
 });
 
 $(".floating-btn").click(function() {
-    var eventTop = $(".section.event").offset();
+    // 20210113
+    var eventTop = $(".section.event .giftcard-box").offset();
     $("html, body").stop().animate({scrollTop: eventTop.top}, 700);
 });
 function customAlert(txt) {
