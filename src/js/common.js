@@ -27,20 +27,12 @@ $(document).ready((function() {
     }
     // steven
 function setPlayerKv($this) {
-    var id = $this.attr("id")
-      , src = $this.data("src")
-      , _this = {};
+    $this.attr("src",'https://apis.zigbang.com/v2/vimeo/497912343?autoplay=1&loop=1&background=1');
 
-    $this.attr("src", src),
-    _this.player = new Zigbang.Player($this),
-    _this.player.on("play", (function() {
-        //console.log("kv play");
-  $("#video01").addClass("show");
-  $(".kv-image").addClass("hide");
-    })),
-    _this.player.on("pause", (function() {
-        //console.log("kv pause");
-    }))
+    setTimeout(function() {
+        $("#video01").addClass("show");
+        $(".kv-image").addClass("hide");
+    }, 1000);
 }
     $(".slider01").slick({
         speed: 600,
