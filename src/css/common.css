@@ -204,8 +204,8 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .slider .slick-dots > li.slick-active > button {background-color:#fff; transition:background-color 1s;}
 
 .slider .slick-arrow {z-index:100;position:absolute;font-size:0;}
-.slider01 .slick-arrow {top:40%;}
-.slider02 .slick-arrow,
+.slider01 .slick-arrow,
+.slider02 .slick-arrow{top:40%;}
 .slider03 .slick-arrow,
 .slider04 .slick-arrow {top:50%; transform:translateY(-10.0000vw);}
 .slider .slick-arrow.slick-next {right:4.0833vw;}
@@ -558,7 +558,7 @@ footer .footer-logo img {width:100%;}
     .slider .slick-dots > li.slick-active > button {background-color:#fff;}
 
     .slider .slick-arrow {width:66px; height:66px; background-position:-120px -180px; background-size:315px 256px;}
-    .slider02 .slick-arrow,
+    .slider02 .slick-arrow{top:40%;}
     .slider03 .slick-arrow,
     .slider04 .slick-arrow {top:392px;}
     .slider .slick-arrow.slick-next {right:15px;}
