@@ -240,6 +240,7 @@ $(document).ready((function() {
             scrollTop: $(".modelHouse").offset().top
         }, 700) : 10 == index ? $("html, body").stop().animate({
             scrollTop: $(".event").offset().top
+            // 20210114
         }, 700) : 11 == index && $("html, body").stop().animate({
             scrollTop: $(".section.event .giftcard-box").offset().top
         }, 700)

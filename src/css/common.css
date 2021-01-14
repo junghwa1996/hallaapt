@@ -314,7 +314,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .section.chapter01 .road-map .type3 .slide-content button{background: url(../img/spritesheet.png) no-repeat -0.6944vw -0.6944vw;width: 4.1667vw;height: 4.1667vw;background-size: 24.7222vw 15.9722vw;position: absolute;}
 .section.chapter01 .road-map .type3 .slide-content button:hover,
 .section.chapter01 .road-map .type3 .slide-content button.active{background: url(../img/spritesheet.png) no-repeat -6.2500vw -0.6944vw;width: 6.2500vw;height: 6.2500vw;background-size: 24.7222vw 15.9722vw; transform: translate(-1.1111vw,-1.1111vw);}
-
+/* 20210114 */
 .section.chapter01 .road-map .type3 .slide-content button:nth-child(1){left: 19%; top: 24%;}
 .section.chapter01 .road-map .type3 .slide-content button:nth-child(2){left: 36%; top: 22%;}
 .section.chapter01 .road-map .type3 .slide-content button:nth-child(3){left: 34%; top: 51%;}
@@ -325,10 +325,10 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .section.chapter01 .road-map .type3 .slide-content button:nth-child(8){left: 59%; top: 60%;}
 .section.chapter01 .road-map .type3 .slide-content button:nth-child(9){left: 56%; top: 69%;}
 .section.chapter01 .road-map .type3 .slide-content button:nth-child(10){left: 62%; top: 89%;}
-.section.chapter01 .road-map .type3 .slide-content button:nth-child(11){left: 88%; top: 42%;}
-.section.chapter01 .road-map .type3 .slide-content button:nth-child(12){left: 79%; top: 51%;}
-.section.chapter01 .road-map .type3 .slide-content button:nth-child(13){left: 90%; top: 57%;}
-.section.chapter01 .road-map .type3 .slide-content button:nth-child(14){left: 89%; top: 69%;}
+.section.chapter01 .road-map .type3 .slide-content button:nth-child(11){left: 84%; top: 39%;}
+.section.chapter01 .road-map .type3 .slide-content button:nth-child(12){left: 79%; top: 62%;}
+.section.chapter01 .road-map .type3 .slide-content button:nth-child(13){left: 89%; top: 64%;}
+.section.chapter01 .road-map .type3 .slide-content button:nth-child(14){left: 86%; top: 78%;}
 .section.chapter01 .road-map .type3 .slide-content button:nth-child(15){left: 95%; top: 73%;}
 
 .section.chapter01 .road-map .type3 .slick-arrow.slick-next,.section.chapter01 .road-map .type3 .slick-arrow.slick-prev {top:45%;}
