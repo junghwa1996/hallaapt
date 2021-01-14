@@ -294,6 +294,29 @@ $(document).ready((function() {
         $('.map-img').slick('slickGoTo', 14);
     }
 });
+$('.map-ai').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+    if(currentSlide == 0){
+        $('.map-button button').removeClass("active");
+        $('.map-button button').eq(0).addClass("active");
+        $('.slider01.map-img').slick('slickGoTo', 0);
+    }else if(currentSlide == 1){
+        $('.map-img').slick('slickGoTo', 14);
+    }
+});
+
+$('.map-img').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){     
+    if(currentSlide < 14){            
+        $('.map-button button').removeClass("active");
+        $('.map-button button').eq(currentSlide).addClass("active");
+        if($('.map-ai').slick('slickCurrentSlide') == 1){
+            $('.map-ai').slick('slickGoTo', 0);
+        }
+    }else if(currentSlide == 14){
+        if($('.map-ai').slick('slickCurrentSlide') == 0){
+            $('.map-ai').slick('slickGoTo', 1);
+        }
+    }
+});
 }
 )),
 $.fn.isInViewport = function(box, detail) {
