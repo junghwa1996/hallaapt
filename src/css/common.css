@@ -114,7 +114,7 @@ body.scroll-lock {position:fixed; height:100%; overflow:hidden;}
 .iframe-box > img {position:absolute; top:0; left:0; width:100%; height:100%;}
 .iframe-box > iframe {width:100%; height:100%; outline:0;}
 /* 20210114 */
-.iframe-box > .btn-sound {position: absolute; top: 4.7778vw; right: 3.7778vw; width: 8.3333vw; height: 8.3333vw; background: url(../img/sound_off.png) no-repeat; background-size: 100% 100%;}
+.iframe-box > .btn-sound {position: absolute; top: 6%; right: 3%; width: 8.3333vw; height: 8.3333vw; background: url(../img/sound_off.png) no-repeat; background-size: 100% 100%;}
 .iframe-box > .btn-sound.on {background: url(../img/sound_on.png) no-repeat;background-size: 100% 100%;}
 /* 20210113 */
 .sub-txt{padding: 12.5000vw 0; text-align: center; font-size: 4.1667vw; line-height: 1.5; font-weight: normal;}
@@ -526,7 +526,7 @@ footer .footer-logo img {width:100%;}
     .iframe-box > img {top:0; left:0; width:100%; height:100%;}
     .iframe-box > iframe {width:100%; height:100%; outline:0;}
     /* 20210114 */
-    .iframe-box > .btn-sound {top: 34px; right: 27px; width: 42px; height: 42px; background: url(../img/sound_off.png) no-repeat; background-size: 100% 100%;}
+    .iframe-box > .btn-sound {width: 42px; height: 42px; background: url(../img/sound_off.png) no-repeat; background-size: 100% 100%;}
     .iframe-box > .btn-sound.on {background: url(../img/sound_on.png) no-repeat; background-size: 100% 100%;}
 
     .title-box h2 {position:relative; margin:0 0 24px; padding:0; color:#62529a; font-size:50px; line-height:1; font-family:'NotoSerifKr-SemiBold';}
