@@ -336,6 +336,8 @@ $(".checkList").click(function(){
 $('.map-button button').click(function() {
     var slideNo = $(this).index();
     $('.map-img').slick('slickGoTo', slideNo);
+    $('.map-button button').removeClass("active");
+    $(this).addClass("active");
 });
 
 //아코디언 FAQ
