@@ -26,14 +26,16 @@ $(document).ready((function() {
         ))
     }
     // steven
-function setPlayerKv($this) {
-    $this.attr("src",'https://apis.zigbang.com/v2/vimeo/497912343?autoplay=1&loop=1&background=1');
+    function setPlayerKv($this) {
+        $("#video01").addClass("show");        
+        $this.attr("src",'https://apis.zigbang.com/v2/vimeo/497912343?autoplay=1&loop=1&background=1');
 
-    setTimeout(function() {
-        $("#video01").addClass("show");
-        $(".kv-image").addClass("hide");
-    }, 1000);
-}
+        $('#video01').on('load', function(){
+            setTimeout(function() {
+                $(".kv-image").addClass("hide");
+            }, 700);
+        });
+    }
     $(".slider01").slick({
         speed: 600,
         dots: !0,
