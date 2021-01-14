@@ -241,7 +241,7 @@ $(document).ready((function() {
         }, 700) : 10 == index ? $("html, body").stop().animate({
             scrollTop: $(".event").offset().top
         }, 700) : 11 == index && $("html, body").stop().animate({
-            scrollTop: $(".event").offset().top
+            scrollTop: $(".section.event .giftcard-box").offset().top
         }, 700)
     }
     )),
